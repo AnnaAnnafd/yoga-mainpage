@@ -11,3 +11,179 @@
 	content:'';
 	clear:both;
 }
+
+$links: #555555;
+$links_hover: #5363db;
+
+body {
+	font: 14px/16px 'Open Sans', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+.wrapper {
+	background: #fff;
+}
+
+
+.holder{
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.l_side{
+	float: left;
+}
+
+.r_side{
+	float: right;
+}
+.lg_title{
+	color: #fff;
+	font-size: 48px;
+	line-height: 60px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+.md_title{
+	font-size: 25px;
+	line-height: 27px;
+	font-weight: 600;
+	color: $links_hover;
+	margin-bottom: 22px;
+}
+
+.caltigr_title{
+	font-family: 'Freestyle';
+	color: #fff;
+	font-size: 39px;
+	line-height: 44px;
+}
+
+.btn{
+	background: $links_hover;
+	color: #fff;
+	border: none;
+	text-align: center;
+	padding: 18px;
+	min-width: 170px;
+	border-radius: 10px;
+	margin-top: 10px;
+	font-size: 16px;
+	display: block;
+	font-weight: 600;
+}
+
+// header nav block
+
+.header_nav{
+	display: table;
+	width: 100%;
+	padding: 16px 155px;
+}
+
+.header .nav,
+.header .logo {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 33.33%
+}
+
+.header .logo img{
+	width: 68px;
+	height: 68px;
+}
+
+.nav li{
+	display: inline-block;
+	margin-right: 25px;
+}
+
+.nav li {
+	position: relative;
+	&:hover a{
+		color: $links_hover;
+	}
+	&:hover:after{
+		position: absolute;
+		display: block;
+		height: 1px;
+		width: 30px;
+		left: calc(50% - 15px);
+		top: 20px;
+		content: '';
+		background: $links_hover; 
+	}
+}
+
+.nav li a {
+	display: block;
+	color: $links;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.main_header{
+	background: #6775e2 url('../images/slider_bg.jpg') 0 0 no-repeat;
+	background-size: cover;
+	min-height: 600px;
+}
+
+.main_header .holder{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+// header_title
+
+.header_title{
+	margin-right: 60px;
+	margin-top: 65px;
+}
+
+// form application
+
+.application{
+	max-width: 300px;
+	background: #fff;
+	border-radius: 15px;
+	padding: 40px 40px 35px 30px;
+	margin-right: 98px;
+}
+
+.application input[type="text"],
+.application select{
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 18px 10px;
+	background: #f2f2f2;
+	margin-bottom: 17px;
+	border-radius: 10px;
+	font-size: 14px;
+}
+
+::-webkit-input-placeholder {color:#888888;}
+::-moz-placeholder          {color:#888888;}
+:-moz-placeholder           {color:#888888;}
+:-ms-input-placeholder      {color:#888888;}
+
+.sel_placeholder{
+	position: relative;
+	&:after{
+		display: block;
+		content: 'Chose your class';
+		position: absolute;
+		top: 18px;
+		left: 12px;
+		color: #888888;
+	}
+}
+
+.application .btn{
+	float: right;
+}
